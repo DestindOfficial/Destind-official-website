@@ -37,7 +37,8 @@
         }
         return gk_fileData[filename] || "";
         }
-        </script><!DOCTYPE html>
+</script>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -65,8 +66,11 @@
             background-repeat: no-repeat;
         }
         .product-image {
-            aspect-ratio: 1 / 1;
-            object-fit: cover;
+            object-fit: contain;
+            background: linear-gradient(to bottom, #1a1a1a, #2D2D2D);
+            width: 100%;
+            height: auto;
+            max-height: 300px;
         }
     </style>
 </head>
@@ -100,9 +104,9 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
                 <!-- Product 1 -->
                 <div class="bg-dark-purple rounded-lg shadow-lg overflow-hidden">
-                    <img src="<a href="https://ibb.co/LDjLxm1r"><img src="https://i.ibb.co/j90cymDz/diamond-2-02ct.webp" alt="diamond-2-02ct" border="0" /></a>" alt="Destind Diamond Necklace" class="w-full h-64 product-image">
+                    <img src="https://i.ibb.co/j90cymDz/diamond-2-02ct.webp" alt="Destind Diamond" class="product-image">
                     <div class="p-4 sm:p-6">
-                        <h3 class="text-lg sm:text-xl font-semibold text-gold">Destind Diamond </h3>
+                        <h3 class="text-lg sm:text-xl font-semibold text-gold">Destind Diamond</h3>
                         <p class="text-gray-200 mt-2">Timeless elegance in every sparkle.</p>
                         <a href="#contact" class="mt-4 block text-center bg-gold text-dark-grey px-4 py-2 rounded hover:bg-dark-purple hover:text-gold">Inquire</a>
                     </div>
@@ -111,7 +115,7 @@
                 <div class="bg-dark-purple rounded-lg shadow-lg overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1605281983424-5a1e181bb774?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Destind Sapphire Ring" class="w-full h-64 product-image">
                     <div class="p-4 sm:p-6">
-                        <h3 class="text-lg sm:text-xl font-semibold text-gold">Destind Sapphire </h3>
+                        <h3 class="text-lg sm:text-xl font-semibold text-gold">Destind Sapphire</h3>
                         <p class="text-gray-200 mt-2">A bold statement of sophistication.</p>
                         <a href="#contact" class="mt-4 block text-center bg-gold text-dark-grey px-4 py-2 rounded hover:bg-dark-purple hover:text-gold">Inquire</a>
                     </div>
@@ -120,7 +124,7 @@
                 <div class="bg-dark-purple rounded-lg shadow-lg overflow-hidden">
                     <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Destind Gold Earrings" class="w-full h-64 product-image">
                     <div class="p-4 sm:p-6">
-                        <h3 class="text-lg sm:text-xl font-semibold text-gold">Destind Gold </h3>
+                        <h3 class="text-lg sm:text-xl font-semibold text-gold">Destind Gold</h3>
                         <p class="text-gray-200 mt-2">Radiate luxury with every detail.</p>
                         <a href="#contact" class="mt-4 block text-center bg-gold text-dark-grey px-4 py-2 rounded hover:bg-dark-purple hover:text-gold">Inquire</a>
                     </div>
@@ -166,7 +170,7 @@
             <div class="flex justify-center space-x-6">
                 <a href="https://www.facebook.com/DestindCo" target="_blank" class="text-gold hover:text-gray-200">Facebook</a>
                 <a href="https://www.instagram.com/destindofficial/" target="_blank" class="text-gold hover:text-gray-200">Instagram</a>
-                <a href="https://x.com/destindofficial" class="text-gold hover:text-gray-200">Twitter</a>
+                <a href="https://x.com/destindofficial" target="_blank" class="text-gold hover:text-gray-200">Twitter</a>
             </div>
             <p class="mt-4">© 2025 Destind. All rights reserved.</p>
         </div>
